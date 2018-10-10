@@ -7,10 +7,8 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  name: value
-  foo: bar
-- name: foo2
-  value: orange
+  - name: foo2
+    value: orange
 
 steps:
- - script: "echo $(name) $(foo) $(foo2)"
+ - script: "echo $(foo2)"
