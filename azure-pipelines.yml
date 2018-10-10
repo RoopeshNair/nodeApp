@@ -5,7 +5,7 @@
 
 
 jobs:
-  job:
+  job: a
     pool:
       vmImage: 'Ubuntu 16.04'
     variables:
@@ -14,7 +14,7 @@ jobs:
     steps:
      - script: "echo $(foo2)"
 
-  job:
+  job: B
     pool:
       vmImage: 'Ubuntu 16.04'
 
