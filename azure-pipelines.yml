@@ -13,13 +13,3 @@ jobs:
       value: orange
   steps:
    - script: "echo $(foo2)"
-
-  job: B
-  pool:
-    vmImage: 'Ubuntu 16.04'
-
-  variables:
-    foo2: bar
-
-  steps:
-   - script: "echo $(foo2)"
