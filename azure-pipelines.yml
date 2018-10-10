@@ -9,6 +9,7 @@ resources:
   - repository: AspNetWebApp   # identifier (no spaces allowed)
     type: github  # see below
     name: AspNetWebApp  # repository name (format depends on `type`)
+    ref: master
     endpoint: RoopeshNair  # endpoint for a GitHub repository
 
 pool:
