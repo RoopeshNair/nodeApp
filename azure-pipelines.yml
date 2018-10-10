@@ -6,20 +6,20 @@
 
 jobs:
   job: a
-    pool:
-      vmImage: 'Ubuntu 16.04'
-    variables:
-      - name: foo2
-        value: orange
-    steps:
-     - script: "echo $(foo2)"
+  pool:
+    vmImage: 'Ubuntu 16.04'
+  variables:
+    - name: foo2
+      value: orange
+  steps:
+   - script: "echo $(foo2)"
 
   job: B
-    pool:
-      vmImage: 'Ubuntu 16.04'
+  pool:
+    vmImage: 'Ubuntu 16.04'
 
-    variables:
-      foo2: bar
+  variables:
+    foo2: bar
 
-    steps:
-     - script: "echo $(foo2)"
+  steps:
+   - script: "echo $(foo2)"
