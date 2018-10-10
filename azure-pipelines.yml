@@ -19,5 +19,3 @@ variables:
   - group: Test
 steps:
  - script: "echo $(foo2) $(var2)"
- - checkout: AspNetWebApp
-   clean: false
