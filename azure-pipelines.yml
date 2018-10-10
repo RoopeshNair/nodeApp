@@ -6,10 +6,16 @@
 pool:
   vmImage: 'Ubuntu 16.04'
 
-variables:
-  - name: foo2
-    value: orange
-  foo: bar
+jobs:
+  job:
+    variables:
+      - name: foo2
+        value: orange
+  steps:
+   - script: "echo $(foo2)"
 
-steps:
- - script: "echo $(foo2) $(foo)"
+  job:
+    variables:
+      foo2: bar
+  steps:
+   - script: "echo $(foo2)"
