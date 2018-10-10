@@ -10,5 +10,5 @@ variables:
   name: value
   foo: bar
 
- steps:
-  - script: "echo $(name) $(foo)"
+steps:
+ - script: "echo $(name) $(foo)"
