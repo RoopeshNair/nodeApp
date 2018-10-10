@@ -9,6 +9,7 @@ pool:
 variables:
   - name: foo2
     value: orange
+  foo: bar
 
 steps:
- - script: "echo $(foo2)"
+ - script: "echo $(foo2) $(foo)"
