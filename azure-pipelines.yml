@@ -8,8 +8,7 @@ pool:
 
 variables:
   name: value
-  - name: foo
-    value: bar
+  foo: bar
 
 steps:
 - script echo $(name) $(foo)
