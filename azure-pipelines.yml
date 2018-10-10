@@ -3,6 +3,14 @@
 # Add steps that use Docker Compose, tag images, push to a registry, run an image, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
+
+resources:
+  repositories:
+  - repository: AspNetWebApp   # identifier (no spaces allowed)
+    type: github  # see below
+    name: AspNetWebApp  # repository name (format depends on `type`)
+    endpoint: RoopeshNair  # endpoint for a GitHub repository
+
 pool:
   vmImage: 'Ubuntu 16.04'
 variables:
@@ -11,3 +19,5 @@ variables:
   - group: Test
 steps:
  - script: "echo $(foo2) $(var2)"
+ - checkout: AspNetWebApp
+   clean: false
