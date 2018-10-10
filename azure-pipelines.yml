@@ -8,5 +8,6 @@ pool:
 variables:
   - name: foo2
     value: orange
+  - group: ProductionVars
 steps:
- - script: "echo $(foo2)"
+ - script: "echo $(foo2) $(UserName)"
